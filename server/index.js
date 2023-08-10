@@ -22,7 +22,7 @@ app.get('/', async (req, res) => {
 const startServer = async () => {
     try {
         connectDB(process.env.MONGODB_URL);
-        app.listen(8080, () => console.log('Sunucu http://localhost:8080 adresinde çalışıyor'))
+        app.listen(8080, () => console.log('Sunucu https://c-ama-sanatsal.onrender.com adresinde çalışıyor'))
     } catch(error) {
         console.log(error);
     }
